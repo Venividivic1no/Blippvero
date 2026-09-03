@@ -1,31 +1,21 @@
-BLIPPVERO HEMSIDA V8 – WEB3FORMS
+BLIPPVERO HEMSIDA V9 – STABILT BILDSPEL + BÄTTRE SÄLJFLÖDE
 
-Den här versionen använder Web3Forms i stället för FormSubmit.
+Ny struktur:
+1. Hero
+2. Så fungerar det
+3. Varför Blippvero?
+4. Passar för
+5. Produkten + stabilt bildspel
+6. Det här ingår
+7. FAQ
+8. Pris + intresseanmälan sist
 
-Ladda upp ALLA filer direkt i root på GitHub-repot:
-index.html
-integritet.html
-tack.html
-styles.css
-script.js
-hero-products.png
-slide-salon.png
-slide-products.png
-dimensions-white.png
-dimensions-black.png
-favicon.svg
-robots.txt
-sitemap.xml
+Viktigt:
+- Bildspelet har en fast höjd och hoppar inte när bilder byts.
+- Prisboxen är borttagen från mitten av produktsidan.
+- Introduktionspris och det stora konverteringsbudskapet ligger vid formuläret längst ner.
+- Små CTA-knappar tidigare på sidan finns kvar så intresserade besökare kan gå direkt till formuläret.
+- Web3Forms är fortfarande inkopplat och fungerar som i V8.
+- Samma fyra valda bilder används.
 
-Bildspelets ordning:
-1. Salong
-2. Svart + vit tillsammans
-3. Vit med mått
-4. Svart med mått
-
-Formuläret:
-- Web3Forms endpoint
-- Egen Blippvero Access Key
-- Minst telefon eller e-post krävs
-- Redirect till tack.html efter lyckad inskickning
-- Ingen FormSubmit-koppling finns kvar
+Ladda upp alla filer direkt i root på GitHub-repot.
