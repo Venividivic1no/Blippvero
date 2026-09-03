@@ -10,7 +10,7 @@
   <meta property="og:description" content="Smarta NFC- och QR-skyltar som gör vägen till ett kundomdöme kortare.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://blippvero.se/">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -58,7 +58,7 @@
         <div class="hero-visual" aria-label="Review-skylt i svart och vitt">
           <div class="visual-glow"></div>
           <div class="product-frame">
-            <img src="assets/product-both.webp" alt="NFC- och QR-skylt för recensioner i vitt och svart" width="1400" height="1050">
+            <img src="product-both.webp" alt="NFC- och QR-skylt för recensioner i vitt och svart" width="1400" height="1050">
           </div>
           <div class="color-pill"><span class="swatch white"></span><span class="swatch black"></span> Finns i vitt &amp; svart</div>
         </div>
@@ -92,12 +92,18 @@
     <section id="produkt" class="product-section section-pad">
       <div class="container product-grid">
         <div class="product-gallery">
-          <div class="product-main"><img src="assets/product-both.webp" alt="Blippvero Review i svart och vitt" loading="lazy"></div>
-          <div class="product-thumbs">
-            <figure><img src="assets/product-white.webp" alt="Vit review-skylt med NFC och QR" loading="lazy"><figcaption>Vit</figcaption></figure>
-            <figure><img src="assets/product-black.webp" alt="Svart review-skylt med NFC och QR" loading="lazy"><figcaption>Svart</figcaption></figure>
+          <div class="product-main"><img src="product-both.webp" alt="Blippvero Review NFC- och QR-skylt i svart och vitt" loading="lazy"></div>
+          <div class="color-options" aria-label="Tillgängliga färger">
+            <div class="color-option">
+              <span class="color-preview color-preview-white" aria-hidden="true"></span>
+              <div><b>Vit</b><small>Ljus och diskret</small></div>
+            </div>
+            <div class="color-option">
+              <span class="color-preview color-preview-black" aria-hidden="true"></span>
+              <div><b>Svart</b><small>Kontrastrik och stilren</small></div>
+            </div>
           </div>
-          <p class="image-note">Bilderna visar produktmodellen som används i pilotleveransen i svart och vitt. Mindre detaljskillnader kan förekomma mellan leveranser.</p>
+          <p class="image-note">Produktbilden visar modellen som används i pilotleveransen. Skylten finns i både vitt och svart.</p>
         </div>
         <div class="product-copy">
           <div class="eyebrow light">Blippvero Review</div>
@@ -208,14 +214,18 @@
             <div><b>3.</b><span>Du får återkoppling via telefon eller e-post.</span></div>
           </div>
         </div>
-        <form id="interestForm" class="interest-form">
+        <form id="interestForm" class="interest-form" action="https://formsubmit.co/kontakt@blippvero.se" method="POST">
+          <input type="hidden" name="_subject" value="Ny Blippvero-förfrågan från hemsidan">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://venividivic1no.github.io/Blippvero/tack.html">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
           <div class="form-grid">
             <label class="full"><span>Ärende *</span><select name="arende" required><option value="Intresseanmälan">Intresseanmälan</option><option value="Demo / mer information">Demo / mer information</option><option value="Flera skyltar">Flera skyltar</option><option value="Support">Support – befintlig kund</option></select></label>
             <label class="full"><span>Företag / verksamhet *</span><input name="foretag" required autocomplete="organization" placeholder="Ex. Salong Nord"></label>
             <label><span>Kontaktperson</span><input name="kontaktperson" autocomplete="name" placeholder="Namn"></label>
             <label><span>Önskad kontaktväg</span><select name="kontaktvag"><option>Spelar ingen roll</option><option>Telefon</option><option>E-post</option></select></label>
             <label><span>Telefon</span><input name="telefon" type="tel" autocomplete="tel" placeholder="07X XXX XX XX"></label>
-            <label><span>E-post</span><input name="epost" type="email" autocomplete="email" placeholder="namn@foretag.se"></label>
+            <label><span>E-post</span><input name="email" type="email" autocomplete="email" placeholder="namn@foretag.se"></label>
             <label><span>Antal</span><select name="antal"><option>Vet inte ännu</option><option>1 skylt</option><option>2–4 skyltar</option><option>5+ skyltar</option></select></label>
             <label><span>Färg</span><select name="farg"><option>Vet inte ännu</option><option>Vit</option><option>Svart</option><option>Båda</option></select></label>
             <label class="full"><span>Meddelande</span><textarea name="meddelande" rows="4" placeholder="Berätta gärna kort om verksamheten, var skylten ska användas eller vad du vill veta."></textarea></label>
