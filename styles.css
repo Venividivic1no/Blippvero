@@ -153,3 +153,13 @@
     gap:4px;
   }
 }
+
+/* Web3Forms honeypot */
+.hidden-botcheck{
+  position:absolute !important;
+  left:-9999px !important;
+  opacity:0 !important;
+  pointer-events:none !important;
+  width:1px !important;
+  height:1px !important;
+}

@@ -91,7 +91,6 @@
 <div class="product-gallery-v6">
 <div aria-label="Bildspel för Blippvero Review" class="slider product-slider">
 <div class="slides">
-
 <div class="slide active">
 <div class="slide-image-wrap lifestyle-slide">
 <img alt="Kund använder en svart Blippvero Review-skylt på en frisörsalong" loading="eager" src="slide-salon.png"/>
@@ -102,7 +101,6 @@
 <p>Vid kassan, receptionen eller disken kan kunden blippa eller scanna direkt medan upplevelsen fortfarande är färsk.</p>
 </div>
 </div>
-
 <div class="slide">
 <div class="slide-image-wrap pair-slide-wrap">
 <img alt="Svart och vit Blippvero Review-skylt bredvid varandra" loading="lazy" src="slide-products.png"/>
@@ -123,7 +121,6 @@
 <p>Den svarta modellen syns tydligt i ljusa miljöer medan den vita smälter in fint på ljusa diskar och receptioner.</p>
 </div>
 </div>
-
 <div class="slide dimensions-slide single-dimension-slide">
 <figure class="dimension-card dimension-card-full">
 <img alt="Vit Blippvero Review-skylt med måtten 12,75 cm hög, 7,6 cm bred och 5 cm djup" loading="lazy" src="dimensions-white.png"/>
@@ -138,7 +135,6 @@
 <p>Tar liten plats men är tillräckligt stor för att QR-koden och NFC-funktionen ska vara enkla att upptäcka.</p>
 </div>
 </div>
-
 <div class="slide dimensions-slide single-dimension-slide">
 <figure class="dimension-card dimension-card-full dark-dimension-card">
 <img alt="Svart Blippvero Review-skylt med måtten 12,75 cm hög, 7,6 cm bred och 5 cm djup" loading="lazy" src="dimensions-black.png"/>
@@ -153,9 +149,7 @@
 <p>Den svarta modellen har exakt samma mått och funktion som den vita – endast färgen skiljer.</p>
 </div>
 </div>
-
 </div>
-
 <div class="slider-controls">
 <button aria-label="Föregående bild" class="slider-btn prev" type="button">‹</button>
 <div aria-label="Välj bild" class="slider-dots">
@@ -274,11 +268,17 @@
 <div><b>3.</b><span>Du får återkoppling via telefon eller e-post.</span></div>
 </div>
 </div>
-<form action="https://formsubmit.co/kontakt@blippvero.se" class="interest-form" id="interestForm" method="POST"><input name="_url" type="hidden" value="https://venividivic1no.github.io/Blippvero/#kontakt"/><input name="_autoresponse" type="hidden" value="Tack för din förfrågan till Blippvero. Vi har tagit emot dina uppgifter och återkommer normalt inom 1 arbetsdag."/>
-<input name="_subject" type="hidden" value="Ny Blippvero-förfrågan från hemsidan"/>
-<input name="_template" type="hidden" value="table"/>
-<input name="_next" type="hidden" value="https://venividivic1no.github.io/Blippvero/tack.html"/>
-<input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text"/>
+<form action="https://api.web3forms.com/submit" class="interest-form" id="interestForm" method="POST">
+<input name="access_key" type="hidden" value="65178db5-a5d2-48e9-945c-7182921a689e"/>
+<input name="subject" type="hidden" value="Ny Blippvero-förfrågan från hemsidan"/>
+<input name="from_name" type="hidden" value="Blippvero hemsida"/>
+<input name="redirect" type="hidden" value="https://venividivic1no.github.io/Blippvero/tack.html"/>
+<input autocomplete="off" class="hidden-botcheck" name="botcheck" tabindex="-1" type="checkbox"/>
+
+
+
+
+
 <div class="form-grid">
 <label class="full"><span>Ärende *</span><select name="arende" required=""><option value="Intresseanmälan">Intresseanmälan</option><option value="Demo / mer information">Demo / mer information</option><option value="Flera skyltar">Flera skyltar</option><option value="Support">Support – befintlig kund</option></select></label>
 <label class="full"><span>Företag / verksamhet *</span><input autocomplete="organization" name="foretag" placeholder="Ex. Salong Nord" required=""/></label>
@@ -294,7 +294,7 @@
 <div aria-live="polite" class="form-error" id="formError" role="alert"></div>
 <div aria-live="polite" class="form-success" id="formSuccess" role="status"></div>
 <button class="btn btn-gold form-submit" type="submit">Skicka förfrågan</button>
-<p class="form-note">Ingen beställning skapas genom formuläret. Vi återkommer först och går igenom upplägget med dig.</p>
+<p class="form-note">Ingen beställning skapas genom formuläret. Vi återkommer via telefon eller e-post och går igenom upplägget med dig.</p>
 </form>
 </div>
 <p class="support-note">Support för befintliga kunder och demokunder: måndag–fredag 09:00–18:00 via uppgifterna ni fått på visitkortet.</p></section>
