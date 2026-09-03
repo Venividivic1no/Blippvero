@@ -40,3 +40,29 @@ if (interestForm) {
     }
   });
 }
+
+// V5 image slider
+document.addEventListener('DOMContentLoaded', function(){
+  const slider = document.querySelector('.slider');
+  if(!slider) return;
+  const slides = Array.from(slider.querySelectorAll('.slide'));
+  const dots = Array.from(slider.querySelectorAll('.dot'));
+  const prev = slider.querySelector('.prev');
+  const next = slider.querySelector('.next');
+  let current = 0;
+
+  function showSlide(index){
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => slide.classList.toggle('active', i === current));
+    dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
+  }
+
+  if(prev) prev.addEventListener('click', () => showSlide(current - 1));
+  if(next) next.addEventListener('click', () => showSlide(current + 1));
+  dots.forEach((dot, i) => dot.addEventListener('click', () => showSlide(i)));
+
+  let autoplay = setInterval(() => showSlide(current + 1), 5000);
+  slider.addEventListener('mouseenter', () => clearInterval(autoplay));
+  slider.addEventListener('mouseleave', () => autoplay = setInterval(() => showSlide(current + 1), 5000));
+  showSlide(0);
+});
